@@ -21,16 +21,17 @@
 
 | 平台 | 最新 | 安装 | 自动更新 |
 |---|---|---|---|
-| macOS | [DMG](https://github.com/sundayfun/siuper-releases/releases?q=mac-&expanded=true) | 拖到 Applications | 内置，每小时检查 |
-| Android | [APK](https://github.com/sundayfun/siuper-releases/releases?q=android-&expanded=true) | 允许「安装未知应用」 | App 内检查 |
+| macOS | [Sunny.dmg](https://github.com/sundayfun/siuper-releases/releases/download/latest/Sunny.dmg) · [mac.json](https://github.com/sundayfun/siuper-releases/releases/download/latest/mac.json) | 拖到 Applications | 内置，每小时检查 |
+| Android | [Sunny.apk](https://github.com/sundayfun/siuper-releases/releases/download/latest/Sunny.apk) · [android.json](https://github.com/sundayfun/siuper-releases/releases/download/latest/android.json) | 允许「安装未知应用」 | App 内检查 |
 
-所有版本：https://github.com/sundayfun/siuper-releases/releases
+上表是**固定链接**：`releases/download/latest/<平台包>` 永远指向当前 stable，`<platform>.json` 描述它（version、build、channel、url、archive_url、tag、sha256、size、notes、published_at），客户端应用内更新读同一形状。历史版本按 tag 存档：https://github.com/sundayfun/siuper-releases/releases
 
 ## 版本规则
 
 - Tag 形如 `<platform>-<version>+<build>`，例：`mac-1.0.13+10478`
 - 每次出包都会上传一个 **Pre-release**，仅供存档与定向测试
-- 只有被 promote 的版本才进入自动更新；当前推送版本以 `mac/appcast.xml` 为准，其 commit 历史即发布历史
+- 只有被 promote 的版本才进入自动更新与固定链接；当前推送版本以 `mac/appcast.xml` 为准，其 commit 历史即发布历史
+- `latest` 是滚动 release，不代表任何一次构建；不要引用它的 tag 做回滚，用 `mac-<version>+<build>`
 
 ## 历史版本
 

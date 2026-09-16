@@ -21,16 +21,17 @@
 
 | Platform | Latest | Install | Auto-update |
 |---|---|---|---|
-| macOS | [DMG](https://github.com/sundayfun/siuper-releases/releases?q=mac-&expanded=true) | Drag to Applications | Built in, checks hourly |
-| Android | [APK](https://github.com/sundayfun/siuper-releases/releases?q=android-&expanded=true) | Allow "install unknown apps" | In-app check |
+| macOS | [Sunny.dmg](https://github.com/sundayfun/siuper-releases/releases/download/latest/Sunny.dmg) · [mac.json](https://github.com/sundayfun/siuper-releases/releases/download/latest/mac.json) | Drag to Applications | Built in, checks hourly |
+| Android | [Sunny.apk](https://github.com/sundayfun/siuper-releases/releases/download/latest/Sunny.apk) · [android.json](https://github.com/sundayfun/siuper-releases/releases/download/latest/android.json) | Allow "install unknown apps" | In-app check |
 
-All builds: https://github.com/sundayfun/siuper-releases/releases
+The table holds **fixed URLs**: `releases/download/latest/<package>` always resolves to the current stable build, and `<platform>.json` describes it (version, build, channel, url, archive_url, tag, sha256, size, notes, published_at) — the same shape every platform's in-app updater reads. Per-build archives: https://github.com/sundayfun/siuper-releases/releases
 
 ## Versioning
 
 - Tags look like `<platform>-<version>+<build>`, e.g. `mac-1.0.13+10478`
 - Every build is uploaded as a **pre-release** — an archive for targeted testing
-- Only promoted builds reach auto-update; `mac/appcast.xml` is the source of truth and its commit history is the release history
+- Only promoted builds reach auto-update and the fixed URLs; `mac/appcast.xml` is the source of truth and its commit history is the release history
+- `latest` is a rolling release, not a build; roll back by tag (`mac-<version>+<build>`), never by `latest`
 
 ## Past versions
 
