@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunny 下载</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --card: #f5f5f7; --accent: #0071e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; } }
+  body { margin: 0; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; color: var(--fg); padding: 48px 16px; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin-bottom: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border-radius: 16px; padding: 24px; }
+  .card h2 { margin: 0 0 8px; font-size: 20px; }
+  .card p { margin: 0 0 16px; color: var(--muted); }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 10px; font-weight: 600; }
+  .qr { width: 128px; height: 128px; margin-top: 16px; border-radius: 8px; background: #fff; display: block; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sunny</h1>
+  <div class="sub">安装包下载 · 仅授权安装使用</div>
+  <div class="grid">
+    <section class="card">
+      <h2>macOS</h2>
+      <p>下载 DMG，拖到 Applications。之后的版本由 App 自动更新。</p>
+      <a class="btn" href="https://github.com/sundayfun/siuper-releases/releases?q=mac-&expanded=true">下载 DMG</a>
+    </section>
+    <section class="card">
+      <h2>Android</h2>
+      <p>下载 APK，首次安装需允许「安装未知应用」。</p>
+      <a class="btn" href="https://github.com/sundayfun/siuper-releases/releases?q=android-&expanded=true">下载 APK</a>
+      <!-- 二维码：assets/android-qr.png，指向最新 APK；Android 发布接入后补 -->
+    </section>
+  </div>
+  <footer>
+    <a href="https://github.com/sundayfun/siuper-releases/releases">历史版本</a> ·
+    <a href="https://github.com/sundayfun/siuper-releases/issues">反馈</a> ·
+    <a href="https://github.com/sundayfun/siuper-releases/blob/main/LICENSE">协议</a>
+  </footer>
+</main>
+</body>
+</html>
