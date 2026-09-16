@@ -24,7 +24,7 @@
 | macOS | [DMG](https://github.com/sundayfun/siuper-releases/releases?q=mac-&expanded=true) | 拖到 Applications | 内置，每小时检查 |
 | Android | [APK](https://github.com/sundayfun/siuper-releases/releases?q=android-&expanded=true) | 允许「安装未知应用」 | App 内检查 |
 
-下载页（含二维码）：https://sundayfun.github.io/siuper-releases/
+所有版本：https://github.com/sundayfun/siuper-releases/releases
 
 ## 版本规则
 

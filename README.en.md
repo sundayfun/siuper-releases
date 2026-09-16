@@ -24,7 +24,7 @@
 | macOS | [DMG](https://github.com/sundayfun/siuper-releases/releases?q=mac-&expanded=true) | Drag to Applications | Built in, checks hourly |
 | Android | [APK](https://github.com/sundayfun/siuper-releases/releases?q=android-&expanded=true) | Allow "install unknown apps" | In-app check |
 
-Download page (with QR codes): https://sundayfun.github.io/siuper-releases/
+All builds: https://github.com/sundayfun/siuper-releases/releases
 
 ## Versioning
 
