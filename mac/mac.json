@@ -2,14 +2,14 @@
   "platform": "macos",
   "app": "Sunny",
   "version": "1.0.13",
-  "build": 12433,
+  "build": 12442,
   "channel": "stable",
   "url": "https://github.com/sundayfun/siuper-releases/releases/download/latest/Sunny.dmg",
-  "archive_url": "https://github.com/sundayfun/siuper-releases/releases/download/mac-1.0.13+12433/SunnyMac-1.0.13-12433.dmg",
-  "tag": "mac-1.0.13+12433",
-  "sha256": "b5cf832ded79de1170ebd6a478532e1dab3d8d9541e0ed776fcd73e785ed4239",
-  "size": 128833856,
+  "archive_url": "https://github.com/sundayfun/siuper-releases/releases/download/mac-1.0.13+12442/SunnyMac-1.0.13-12442.dmg",
+  "tag": "mac-1.0.13+12442",
+  "sha256": "9b130100cc72dbb271db76c97f41e6b53a19689ba7db8ef69407eedaa5120047",
+  "size": 128838361,
   "min_system_version": "12.0",
-  "notes": "Sunny for Mac 1.0.13 (12433)",
-  "published_at": "2026-11-25T03:20:30Z"
+  "notes": "Sunny for Mac 1.0.13 (12442)",
+  "published_at": "2026-11-25T04:01:35Z"
 }
